@@ -1,0 +1,8 @@
+1)What is SOQL ? Differnece between SQL and SOQL?
+   SOQL stands for Saleforce object query Language .It is used to retrieve the data from Salesforce Database.
+   SQL is a programming language that's used to query and manage data in a database,while SOQL is a language used specifically to query data from Salesforce.
+    SQL allows  ata modifying statements like UPDATE, INSERT but SOQL it does not allow data modifying statements like UPDATE, INSERT.
+
+
+   
+
