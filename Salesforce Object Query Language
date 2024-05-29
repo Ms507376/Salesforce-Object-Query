@@ -4,5 +4,33 @@
     SQL allows  ata modifying statements like UPDATE, INSERT but SOQL it does not allow data modifying statements like UPDATE, INSERT.
 
 
+2) Commands available in SOQL ?
+   a) SELECT > SELECT Name, Type, BillingCountry FROM Account 
+             >SELECT Name FROM Account WHERE Type = ‘Customer’ ( where clause)
+   b) LIMIT > SELECT Name FROM Account WHERE Type = ‘Customer’ LIMIT 5(LIMIT is used to define how many records we wish to pull.If no LIMIT Is used, SOQL will pull every record available)
+   c) ORDER BY>SELECT Name FROM Account ORDER BY AnnualRevenue DESC( ORDERBY is used to sort query result it can be ascending or descending)
+   d) AND, OR >SELECT Name FROM Account WHERE Type = ‘Customer’ AND BillingCountry = ‘USA’
+              > SELECT Name FROM Account WHERE BillingCity = ‘London’ OR BillingCountry = ‘USA’
+   e)LIKE >SELECT FirstName, LastName, Email FROM Contact WHERE Email LIKE ‘%force.com%’
+   f) IN> SELECT Name FROM Account WHERE Id IN (SELECT AccountID FROM CustomObject__c WHERE Type__c = ‘Customer’)(IN allows you to filter results with the WHERE clause against a list of values)
+   g)GROUPBY>SELECT LeadSource, COUNT(Company) FROM Lead GROUP BY LeadSource(GROUP BY is used with aggregate functions to summarise data and roll up query results)
+   h) COUNT() >SELECT COUNT(Id) FROM Account ( Used to count the number of rows matching the query criteria.)
+   i)COUNT_DISTINCT>SELECT COUNT_DISTINCT(Company) FROM Lead ( Returns the number of distinct non-null field values matching the query criteria)
+   j)MIN() >SELECT MIN(AnnualRevenue) FROM Account
+   k)MAX()>SELECT MAX(AnnualRevenue) FROM Account
+   l)SUM()>SELECT SUM(Amount) FROM Opportunity WHERE IsClosed = false AND Probability > 60
+   m)AVG()>SELECT AVG(Amount) FROM Opportunity WHERE Type = ‘New Customer’
+
+3) Salesforce Date Literals
+  Command	     Example
+   TODAY	        SELECT Name, Amount, CloseDate FROM Opportunity WHERE CloseDate = TODAY
+ YESTERDAY	     SELECT Name, Amount, CloseDate FROM Opportunity WHERE CloseDate = Yesterday
+ TOMORROW	     SELECT Name, Amount, CloseDate FROM Opportunity WHERE CloseDate = TOMORROW
+THIS_WEEK	     SELECT Name, Amount, CloseDate FROM Opportunity WHERE CloseDate = THIS_WEEK
+NEXT_MONTH	     SELECT Name, Amount, CloseDate FROM Opportunity WHERE CloseDate = NEXT_MONTH
+LAST_90_DAYS    SELECT Name, Amount, CloseDate FROM Opportunity WHERE CLOSEDate = LAST_90_DAYS
+LAST_MONTH	    SELECT Name, Amount, CloseDate FROM Opportunity WHERE CLOSEDate = LAST_MONTH
+THIS_YEAR	    SELECT Name, Amount, CloseDate FROM Opportunity WHERE CLOSEDate = THIS_YEAR
+  
    
 
