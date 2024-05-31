@@ -31,6 +31,24 @@ NEXT_MONTH	     SELECT Name, Amount, CloseDate FROM Opportunity WHERE CloseDate 
 LAST_90_DAYS    SELECT Name, Amount, CloseDate FROM Opportunity WHERE CLOSEDate = LAST_90_DAYS
 LAST_MONTH	    SELECT Name, Amount, CloseDate FROM Opportunity WHERE CLOSEDate = LAST_MONTH
 THIS_YEAR	    SELECT Name, Amount, CloseDate FROM Opportunity WHERE CLOSEDate = THIS_YEAR
-  
-   
+
+4)  what is limit of SOQL in Salesforce and how you can overcome it?
+     Using SOQL we can retrieve maximum 50,000  record per transaction.
+     To overcome this:
+     we use pagination with OFFSET and LIMIT clauses,which allows retrieval of data in smaller chunks.
+     By using Batch Apex which processes large data sets asynchronously by breaking them into manageable batches.
+
+
+     
+     
+
+
+
+
+
+
+
+
+
+
 
