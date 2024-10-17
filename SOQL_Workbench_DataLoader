@@ -38,6 +38,11 @@ THIS_YEAR	    SELECT Name, Amount, CloseDate FROM Opportunity WHERE CLOSEDate = 
      we use pagination with OFFSET and LIMIT clauses,which allows retrieval of data in smaller chunks.
      By using Batch Apex which processes large data sets asynchronously by breaking them into manageable batches.
 
+-----------------https://dineshyadav.com/workbench-for-salesforce-explained/-------------------------------------Workbench query
+
+
+
+
 
      
      
