@@ -38,7 +38,20 @@ THIS_YEAR	    SELECT Name, Amount, CloseDate FROM Opportunity WHERE CLOSEDate = 
      we use pagination with OFFSET and LIMIT clauses,which allows retrieval of data in smaller chunks.
      By using Batch Apex which processes large data sets asynchronously by breaking them into manageable batches.
 
------------------https://dineshyadav.com/workbench-for-salesforce-explained/-------------------------------------Workbench query
+5)  What is salesforce workbench ?? and what's the feautre of workbench and why it is used?
+    Salesforce Workbench is a free, web-based tool that helps users interact with Salesforce databases.
+    It is used for 
+    a) Data management: It is used to  Import and export data, perform bulk record updates, and mass creation and deletion ( CSv or xml ,List ,Matrix) 
+    b) Rest API operation: It is used to perform all API menthod ( Get ,post ,put patch(for editing and updating the record through rest api), delete)
+    c) Queries : For SOSL and SOQL search it's used.
+    d) Migration:To deploy and retirieve metadata
+    e) Password management
+
+
+
+
+
+
 
 
 
