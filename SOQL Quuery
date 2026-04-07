@@ -75,7 +75,8 @@
     select name from account where createddate < 2025-01-01T00:00:00Z
 
 22) 
- 
+
+
     
  
 
