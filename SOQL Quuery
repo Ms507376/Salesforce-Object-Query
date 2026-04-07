@@ -41,7 +41,74 @@
 10) write a SOQL query to fetch the account id and ammount of all opportunities where amount greater than 50000.
     select accountid ,name ,amount from opportunity where amount >50000
 
-11) 
+11) write a SOQL query to fetch the name of all contacts whose email contains the domain gmail.com
+    select lastname , email from contact where email LIKE '%gmail.com'
+
+12)  write a SOQL query to fetch the name and phone of all accounts where the phone number is not null.
+       select name , phone from account where phone =! null
+
+13) write a SOQL query to fetch the id and closedate of all opportunities that are closing in next 30 days.
+     select id , closedate from opportunity where closedate=Next_N_Days:30
+
+14) write a SOQL query to fetch the name and accountid of all contacts who are associated with an account.
+     select lastname , accountid from contact where accountid != null
+
+15) write a SOQL query to fetch the id and email of contacts where the email field is not blank.
+    select id , email from contact where email != null
+
+16) write a SOQL query to fetch the id and name of all opportunities that have been closed.
+     Select id, name form opportunity where stagename='Closed Lost' OR 'Closed Won'
+
+17)  write a SOQL query to fetch the name and createddate of all the accounts that were created in the last 7 days.
+     Select name , createddate from account where createddate=Last_N_DAYS:7
+
+18) write a  SOQL query to fetch the id and name of all contacts that are associated with accounts in the "Technology" Industry.(Parent and child relationship(account and contact))
+     select id , name from contacts where Accoount.industry='Technology'
+
+19) write a  SOQL query to fetch the name and phone of all accounts where phone starts with the area code "123"
+    Select name ,phone from account where phone LIKE '123%'
+
+20) write a  SOQL query to fetch the id and closeddate of all opportunities that have closeddate in the past.
+    select id , Name, closeddate from opportunity where Closeddate < TODAY
+
+21) write a  SOQL query to fetch the name of all accounts that were created before Januray 1,2025.
+    select name from account where createddate < 2025-01-01T00:00:00Z
+
+22) 
+ 
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
 
 
