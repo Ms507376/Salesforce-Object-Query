@@ -23,6 +23,32 @@
 4) write a SOQL query to fetch all the account from account object 
     Select name from  account
 
+5) write a SOQL query to fetch the id and email fields of all the contact from the contact object.
+    Select id ,email  from  contact
+
+6)  write a SOQL query to fetch Name and billing city of all the acconuts  where billing city is newyork.
+    Select Name ,Billing City  from  account where  Billingcity='New York'
+
+7) write a SOQL query to fetch all the contacts where last name starts with "S";
+    Select lastname  from contact where lastname LIKE 'S%'
+
+8) write a SOQL query to fetch the name and type of all accounts where the type is not null.
+   select name , type from account where type =! null
+
+9) write a SOQL query to fetch the name and id of all the opportunities that are in the "Prospecting" stage.
+   select name , id, stage  from opportunity where stage='Prospecting'
+
+10) write a SOQL query to fetch the account id and ammount of all opportunities where amount greater than 50000.
+    select accountid ,name ,amount from opportunity where amount >50000
+
+11) 
+   
+
+
+    
+
+
+
 
 
 
